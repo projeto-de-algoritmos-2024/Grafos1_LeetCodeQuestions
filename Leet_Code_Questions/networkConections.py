@@ -75,6 +75,6 @@ class Solution:
 
 # Casos de teste (remova os comentários para testar)
 
-sol = Solution()
-print(sol.criticalConnections(4, [[0,1],[1,2],[2,0],[1,3]]))  # Saída esperada: [[1, 3]]
-print(sol.criticalConnections(2, [[0,1]]))  # Saída esperada: [[0, 1]]
+# sol = Solution()
+# print(sol.criticalConnections(4, [[0,1],[1,2],[2,0],[1,3]]))  # Saída esperada: [[1, 3]]
+# print(sol.criticalConnections(2, [[0,1]]))  # Saída esperada: [[0, 1]]
