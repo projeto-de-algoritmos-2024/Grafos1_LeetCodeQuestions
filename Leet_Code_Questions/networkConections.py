@@ -18,40 +18,44 @@ class Solution:
         def dfs_pilha(inicio):
             pilha = [(inicio, -1)]  # Iniciar a pilha com o nó inicial e sem nó pai
             stack_info = []  # Para armazenar o estado da DFS (nó, pai)
-            caminho = []  # Caminho atual DFS (para backtracking)
+
+            # Armazenar menor_link para o caminho
+            caminho = []
 
             while pilha:
-                no_atual, pai = pilha.pop()
-
+                no_atual, pai = pilha[-1]  # Pegar o topo da pilha sem removê-lo
                 if ids[no_atual] == -1:  # Se o nó ainda não foi visitado
                     ids[no_atual] = tempo[0]
                     menor_link[no_atual] = tempo[0]
                     tempo[0] += 1
-                    stack_info.append((no_atual, pai))
-                    caminho.append(no_atual)
+                    caminho.append(no_atual)  # Adiciona o nó ao caminho de DFS
 
-                    for vizinho in grafo[no_atual]:
-                        if vizinho == pai:
-                            continue  # Não revisitar o nó pai
+                processado = True  # Inicialmente, assumimos que todos os vizinhos foram processados
 
-                        if ids[vizinho] == -1:
-                            pilha.append((vizinho, no_atual))  # Adiciona o vizinho na pilha
-                        else:
-                            # Se o vizinho já foi visitado, faz a atualização de menor_link
-                            menor_link[no_atual] = min(menor_link[no_atual], ids[vizinho])
+                # Agora exploramos os vizinhos do nó atual
+                for vizinho in grafo[no_atual]:
+                    if vizinho == pai:
+                        continue  # Não revisitar o nó pai
+                    if ids[vizinho] == -1:
+                        pilha.append((vizinho, no_atual))  # Adiciona o vizinho à pilha para ser processado
+                        processado = False  # Interrompe para processar o vizinho primeiro
+                        break  # Para processar o próximo nó
+                    else:
+                        # Atualiza o menor_link com o valor do vizinho visitado anteriormente
+                        menor_link[no_atual] = min(menor_link[no_atual], ids[vizinho])
 
-                if stack_info and stack_info[-1][0] == no_atual:
-                    stack_info.pop()  # Remove o estado após processar todos os vizinhos
+                if processado:
+                    # Após processar todos os vizinhos, verificar se há uma ponte
+                    pilha.pop()  # Remover o nó atual da pilha após o processamento completo
 
-                    # Verificação de ponte
                     if pai != -1 and menor_link[no_atual] > ids[pai]:
                         conexoes_criticas.append([pai, no_atual])
 
-                    # Atualiza o menor_link do nó pai
+                    # Atualizar o menor_link do pai com base no menor_link do nó atual
                     if pai != -1:
                         menor_link[pai] = min(menor_link[pai], menor_link[no_atual])
 
-        # Iniciar a DFS do nó 0 (supondo que o grafo seja conectado)
+        # Iniciar a DFS para todos os nós não visitados
         for i in range(n):
             if ids[i] == -1:
                 dfs_pilha(i)
