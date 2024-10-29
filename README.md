@@ -1,4 +1,4 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+<!-- **!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
 
 Temas:
  - Grafos1
@@ -10,18 +10,18 @@ Temas:
  
  **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
  
- (Apague essa seção)
+ (Apague essa seção) -->
 
-# NomedoProjeto
+# Leet Code Questions
 
 **Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 19/0085819  |  Cicero Barrozo Fernandes Filho |
+| 20/0067923  |  João Henrique Marques Calzavara |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
