@@ -32,6 +32,7 @@ Temas:
 | -- | -- | -- |
 | [1192. Critical connections in a network](https://leetcode.com/problems/critical-connections-in-a-network/description/)  |  ***Difícil*** | [networkConections.py](Leet_Code_Questions/networkConections.py) |
 |  [928. Minimize malware spread ii](https://leetcode.com/problems/minimize-malware-spread-ii/description/) |  ***Difícil*** | [malwareSpread.py](Leet_Code_Questions/malwareSpread.py)|
+|  [749. Contain Virus](https://leetcode.com/problems/contain-virus/description/) |  ***Difícil*** | [containVirus.py](Leet_Code_Questions/containVirus.py)|
 
 ## Screenshots
 <!-- Adicione 3 ou mais screenshots do projeto em funcionamento. -->
@@ -53,6 +54,13 @@ Temas:
 - Submissão aceita no ***Leet code***:
     - ![imagem network conection submissao](assets/submissaoNetworkConection.png)
 
+### containVirus.py
+- Rodando o arquivo python no terminal na pasta onde ele se encontra, após descomentar os testes no final do arquivo:
+    - ![imagem contain virus terminal](assets/containVirusTerminal.png)
+- Rodando o arquivo no ***Leet Code*** com seus testes passando:
+    - ![imagem contain virus teste](assets/testeContainVirus.png)
+- Submissão aceita no ***Leet code***:
+    - ![imagem contain virus submissao](assets/submissaoContainVirus.png)
 
 ## Instalação
 **Linguagem**: Python<br>
@@ -66,7 +74,8 @@ Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
         - ```git clone https://github.com/projeto-de-algoritmos-2024/Grafos1_LeetCodeQuestions.git ```
     - Após ter a pasta do projeto, rode no terminal de sua máquina dentro da pasta ***Leet_Code_Questions***,  descomente os prints dos testes no final dos arquivos .py, e execute os seguintes comandos:
         - ```python3 malwareSpread.py ```<br>
-          ```python3 networkConections.py ```
+          ```python3 networkConections.py ```<br>
+          ```python3 containVirus.py```
     - Para testar no ***leet code***:
         - Entre nos ***links*** presentes na tabela de questões, copie o código da questão que quer testar, e clique em ***run*** ou ***submit*** para testar os códigos ***(lembre de deixar os prints de teste comentados para testar no leet code)***.
 
