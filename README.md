@@ -33,6 +33,7 @@ Temas:
 | [1192. Critical connections in a network](https://leetcode.com/problems/critical-connections-in-a-network/description/)  |  ***Difícil*** | [networkConections.py](Leet_Code_Questions/networkConections.py) |
 |  [928. Minimize malware spread ii](https://leetcode.com/problems/minimize-malware-spread-ii/description/) |  ***Difícil*** | [malwareSpread.py](Leet_Code_Questions/malwareSpread.py)|
 |  [749. Contain Virus](https://leetcode.com/problems/contain-virus/description/) |  ***Difícil*** | [containVirus.py](Leet_Code_Questions/containVirus.py)|
+|  [675. Cut Off Trees For Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/description/) |  ***Difícil*** | [cutOffTrees.py](Leet_Code_Questions/cutOffTrees.py)|
 
 ## Screenshots
 <!-- Adicione 3 ou mais screenshots do projeto em funcionamento. -->
@@ -62,6 +63,14 @@ Temas:
 - Submissão aceita no ***Leet code***:
     - ![imagem contain virus submissao](assets/submissaoContainVirus.png)
 
+### cutOffTrees.py
+- Rodando o arquivo python no terminal na pasta onde ele se encontra, após descomentar os testes no final do arquivo:
+    - ![imagem cut off trees terminal](assets/cutOffTreesTerminal.png)
+- Rodando o arquivo no ***Leet Code*** com seus testes passando:
+    - ![imagem cut off trees teste](assets/testeCutOffTrees.png)
+- Submissão aceita no ***Leet code***:
+    - ![imagem cut off trees submissao](assets/submissaoCutOffTrees.png)
+
 ## Instalação
 **Linguagem**: Python<br>
 <!-- **Framework**: (caso exista)<br>
@@ -75,12 +84,10 @@ Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
     - Após ter a pasta do projeto, rode no terminal de sua máquina dentro da pasta ***Leet_Code_Questions***,  descomente os prints dos testes no final dos arquivos .py, e execute os seguintes comandos:
         - ```python3 malwareSpread.py ```<br>
           ```python3 networkConections.py ```<br>
-          ```python3 containVirus.py```
+          ```python3 containVirus.py``` <br>
+          ```python3 cutOffTrees.py```
     - Para testar no ***leet code***:
         - Entre nos ***links*** presentes na tabela de questões, copie o código da questão que quer testar, e clique em ***run*** ou ***submit*** para testar os códigos ***(lembre de deixar os prints de teste comentados para testar no leet code)***.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 ## Link para o vídeo 
 
